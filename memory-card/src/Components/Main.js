@@ -1,7 +1,7 @@
 import React from 'react';
 import {useState,useEffect} from 'react';
 import Cardflex from './MainsComponent/Cardflex';
-import { click } from '@testing-library/user-event/dist/click';
+import Scoreboard from './MainsComponent/Scoreboard';
 //The main chunk of this application here:defining states(useState)
 //passing props and using useEffect hook and other fetching and all 
 //logic of this application will be embedded here
@@ -68,9 +68,10 @@ const Main=()=>{
         {
             setClickedsuperheroes((prevState)=>[...prevState,superhero.name])
             console.log(clickedsuperheroes)
-            setCurrentscore(currentscore+1)
-            if(currentscore>bestscore)
-                setBestscore(currentscore)
+            const newscore=currentscore+1
+            if(newscore>=bestscore)
+                setBestscore(newscore)
+            setCurrentscore(newscore)
            
         }
 
@@ -82,6 +83,7 @@ const Main=()=>{
     }
     return(
         <div>
+            <Scoreboard currentscore={currentscore} bestscore={bestscore}></Scoreboard>
             <Cardflex handleChange={handleChange} superheroes={superheroes}></Cardflex>
         </div>
     )

@@ -68,6 +68,10 @@ const Main=()=>{
         {
             setClickedsuperheroes((prevState)=>[...prevState,superhero.name])
             console.log(clickedsuperheroes)
+            setCurrentscore(currentscore+1)
+            if(currentscore>bestscore)
+                setBestscore(currentscore)
+           
         }
 
     }

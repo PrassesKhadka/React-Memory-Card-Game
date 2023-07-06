@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components'
 import Eachcard from './Eachcard.js';
 
-const Cardflex=({superheroes})=>{
+const Cardflex=({superheroes,handleChange})=>{
     //run through the array to display
     const wholeCards=superheroes.map((superhero)=>(
-        <Eachcard key={superhero.id} superhero={superhero}></Eachcard> 
+        <Eachcard key={superhero.id} handleChange={handleChange} superhero={superhero}></Eachcard> 
     ))
     return(
         <Wrapper>{wholeCards}</Wrapper>

@@ -1,23 +1,30 @@
 import React from 'react';
 import {useState,useEffect} from 'react';
 import Cardflex from './MainsComponent/Cardflex';
+import { click } from '@testing-library/user-event/dist/click';
 //The main chunk of this application here:defining states(useState)
 //passing props and using useEffect hook and other fetching and all 
 //logic of this application will be embedded here
 const Main=()=>{
     const [superheroes,setSuperheroes]=useState([]);//total superheroes
-    const [clickedsuperheoes,setClickedsuperheoes]=useState([]); //clicked superheroes
+    const [clickedsuperheroes,setClickedsuperheroes]=useState([]); //clicked superheroes array
     const [currentscore,setCurrentscore]=useState(0);
     const [bestscore,setBestscore]=useState(0);
 
     //using ComponentMounts to fetch data
+    //shuffle array after each ComponentMounts and when clicked on cards
     useEffect(()=>{
         const total=12;
         const setArray=async()=>{
-           setSuperheroes(await fetchAPI(total))
+           setSuperheroes(shuffle(await fetchAPI(total)))
         }
         setArray()
     },[])
+
+    //shuffle function
+    const shuffle=(superheroes)=>{
+        return [...superheroes].sort(()=>Math.floor(Math.random()-0.5))
+    }    
 
     //To fetch data from marvel API
     async function fetchAPI(total)
@@ -48,9 +55,30 @@ const Main=()=>{
             console.log(error)
         }
     }
+
+    //handleChange when clicked on each cards
+    //superhero=each object which is clicked i.e {id,name,image}
+    const handleChange=(superhero)=>{
+        console.log(superhero.name)
+        if(clickedsuperheroes.includes(superhero.name))
+        {
+            reset()
+        }
+        else
+        {
+            setClickedsuperheroes((prevState)=>[...prevState,superhero.name])
+            console.log(clickedsuperheroes)
+        }
+
+    }
+
+    //reset all states and unmount eventListener using useEffect
+    const reset=()=>{
+        console.log('reset function executes')
+    }
     return(
         <div>
-            <Cardflex superheroes={superheroes}></Cardflex>
+            <Cardflex handleChange={handleChange} superheroes={superheroes}></Cardflex>
         </div>
     )
 }

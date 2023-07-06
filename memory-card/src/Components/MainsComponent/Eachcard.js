@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Eachcard=({superhero})=>{
+const Eachcard=({superhero,handleChange})=>{
     return(
-        <Wrapper>
-            <Image src={superhero.image} ></Image>
+        <Wrapper onClick={()=>handleChange(superhero)}>
+            <Image src={superhero.image}></Image>
             <Name>{superhero.name}</Name>
         </Wrapper>
     )

@@ -12,7 +12,7 @@ const Main=()=>{
     const [bestscore,setBestscore]=useState(0);
 
     //using ComponentMounts to fetch data
-    //shuffle array after each ComponentMounts and when clicked on cards
+    //shuffle array after each ComponentMounts
     useEffect(()=>{
         const total=12;
         const setArray=async()=>{
@@ -72,7 +72,7 @@ const Main=()=>{
             if(newscore>=bestscore)
                 setBestscore(newscore)
             setCurrentscore(newscore)
-           
+            setSuperheroes(shuffle(superheroes))
         }
 
     }
@@ -82,7 +82,7 @@ const Main=()=>{
         setCurrentscore(0);
         setClickedsuperheroes([]);
     }
-    
+
     return(
         <div>
             <Scoreboard currentscore={currentscore} bestscore={bestscore}></Scoreboard>

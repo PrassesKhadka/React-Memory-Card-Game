@@ -19,6 +19,7 @@ const Wrapper=styled.div`
 const Image=styled.img`
     height:150px;
     width:150px;
+    border:1px solid white;
 `;
 
 const Name=styled.p`

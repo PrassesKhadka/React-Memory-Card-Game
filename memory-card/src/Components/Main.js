@@ -79,8 +79,10 @@ const Main=()=>{
 
     //reset all states and unmount eventListener using useEffect
     const reset=()=>{
-        console.log('reset function executes')
+        setCurrentscore(0);
+        setClickedsuperheroes([]);
     }
+    
     return(
         <div>
             <Scoreboard currentscore={currentscore} bestscore={bestscore}></Scoreboard>

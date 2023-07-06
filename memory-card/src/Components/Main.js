@@ -36,7 +36,7 @@ const Main=()=>{
             });
             const json=await response.json()
             //this data is an array of objects with each id and name
-            const data=json.data.results.slice(0,total).map((item)=>{
+            const data=json.data.results.slice(0,12).map((item)=>{
                 let id=item.id;
                 let name=item.name;
                 let image=`${item.thumbnail.path}/portrait_fantastic.${item.thumbnail.extension}`

@@ -12,14 +12,16 @@ const Eachcard=({superhero})=>{
 
 const Wrapper=styled.div`
     display:flex;
-    flex-direction:column
-    align-items:center;
+    flex-direction:column;
     flex-wrap:wrap;
+    padding:20px;
 `
 const Image=styled.img`
+    height:150px;
+    width:150px;
 `;
 
-const Name=styled.h1`
+const Name=styled.p`
     
 `;
 

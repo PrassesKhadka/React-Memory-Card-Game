@@ -8,17 +8,16 @@ const Cardflex=({superheroes})=>{
         <Eachcard key={superhero.id} superhero={superhero}></Eachcard> 
     ))
     return(
-        <div>
-            <Wrapper>{wholeCards}</Wrapper>
-        </div>
+        <Wrapper>{wholeCards}</Wrapper>
     )
 }
 
 
 const Wrapper=styled.div`
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items:center;
     flex-wrap:wrap;
+    background-color:lightblue;
 `;
 export default Cardflex;

@@ -2,6 +2,8 @@ import React from 'react';
 import {useState,useEffect} from 'react';
 import Cardflex from './MainsComponent/Cardflex';
 import Scoreboard from './MainsComponent/Scoreboard';
+import Winner from './MainsComponent/Winner';
+
 //The main chunk of this application here:defining states(useState)
 //passing props and using useEffect hook and other fetching and all 
 //logic of this application will be embedded here
@@ -17,11 +19,18 @@ const Main=()=>{
     useEffect(()=>{
         const total=12;
         const setArray=async()=>{
-           setSuperheroes(shuffle(await fetchAPI(total)))
+            setSuperheroes(shuffle(await fetchAPI(total)))
         }
         setArray()
     },[])
 
+    useEffect(()=>{
+        if(currentscore===12)
+        {
+            setWinner(true)
+        }
+    },[currentscore])
+    
     //shuffle function
     const shuffle=(superheroes)=>{
         return [...superheroes].sort(()=>Math.floor(Math.random()-0.5))
@@ -75,10 +84,6 @@ const Main=()=>{
             setCurrentscore(newscore)
             setSuperheroes(shuffle(superheroes))
         }
-        if(currentscore=12)
-        {
-            setWinner(true)
-        }
 
     }
 
@@ -91,7 +96,7 @@ const Main=()=>{
     return(
         <div>
             {/* Conditional rendering the win */}
-            {winner?<Winner><Winner/>:<Scoreboard currentscore={currentscore} bestscore={bestscore}></Scoreboard>}
+            {winner ? <Winner></Winner>:<Scoreboard currentscore={currentscore} bestscore={bestscore}></Scoreboard>}
             <Cardflex handleChange={handleChange} superheroes={superheroes}></Cardflex>
         </div>
     )

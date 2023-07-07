@@ -7,9 +7,15 @@ import Footer from '../src/Components/Footer';
 import styles from './App.css';
 
 function App() {
+  const [showcomponent,setShowcomponent]=useState(true)
+  const handleChange=()=>{
+    setShowcomponent(false)
+  }    
+
   return(
     <div>
-      <Wrapper></Wrapper>
+      {/* Conditional rendering in react */}
+      {showcomponent &&<Wrapper handleChange={handleChange}></Wrapper>}
       <Header></Header>
       <Main></Main>
       <Footer></Footer>

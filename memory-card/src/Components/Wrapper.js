@@ -1,15 +1,15 @@
 import React from 'react';
-import {useEffect} from 'react';
+import {useState,useEffect} from 'react';
 import styled from 'styled-components';
 import styles from '../../src/App.css';
 
-const Wrapper=()=>{
-    //ComponentDidMount
+
+const Wrapper=({handleChange})=>{
     return(
         <Instruction>
             <MessageBox>
                 <Message>Don't click on the same card twice.</Message>
-                <Ok>Ok</Ok>
+                <Ok onClick={handleChange}>Ok</Ok>
             </MessageBox>
         </Instruction>
     )

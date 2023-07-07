@@ -6,10 +6,12 @@
 <img src='memory_card_screenshot.png'></img>
 
 <h1>Installing and running:</h1>
->git clone https://github.com/PrassesKhadka/React-Memory-Card-Game.git
->cd React-Memory-Card-Game
->npm install
->npm run start
+<li>
+    <ol>git clone https://github.com/PrassesKhadka/React-Memory-Card-Game.git</ol>
+    <ol>cd React-Memory-Card-Game</ol>
+    <ol>npm install</ol>
+    <ol>npm run start</ol>
+</li>
 
 <h1>Built With:</h1>
 <ul>

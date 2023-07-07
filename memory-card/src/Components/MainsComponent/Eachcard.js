@@ -23,7 +23,7 @@ const Image=styled.img`
 `;
 
 const Name=styled.p`
-    
+    padding:5px;
 `;
 
 export default Eachcard;

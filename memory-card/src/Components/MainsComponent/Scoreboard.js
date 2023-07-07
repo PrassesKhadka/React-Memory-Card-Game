@@ -11,23 +11,25 @@ const Scoreboard=({currentscore,bestscore})=>{
 }
 
 const Board=styled.div`
-    background-color:lightgreen;
+    background-color:red;
     display:flex;
     justify-content:space-around;
     align-items:center;
     flex-wrap:wrap;
+    padding:10px;
 `
+
 const Current=styled.p`
     border:1px solid black;
     border-radius:25px;
-    padding:8px;
+    padding:15px;
     background-color:white;
     color:blue;
 `
 const Best=styled.p`
     border:1px solid black;
     border-radius:25px;
-    padding:8px;
+    padding:15px;
     background-color:white;
     color:red;
 `

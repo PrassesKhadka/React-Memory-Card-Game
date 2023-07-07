@@ -1,0 +1,22 @@
+*
+{
+    box-sizing:border-box;
+    margin:0;
+    outline:0;
+    padding:0;
+    border:0;
+}
+
+@font-face {
+    font-family: Signature;
+    src: url(../public/fonts/Creattion\ Demo.otf);
+}
+
+p
+{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1
+{
+    font-family:'Signature';
+}

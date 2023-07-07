@@ -1,7 +1,5 @@
 import React from 'react';
-import {useState,useEffect} from 'react';
 import styled from 'styled-components';
-import styles from '../../src/App.css';
 
 //Popup appear
 const Wrapper=({handleChange})=>{
@@ -11,7 +9,7 @@ const Wrapper=({handleChange})=>{
                 <h2>How to play:</h2>
                 <Message>Don't click on the same card twice.</Message>
                 <Ok onClick={handleChange}>Ok</Ok>
-                <h1>Prasses Khadka</h1>
+                <h1>©Prasses Khadka</h1>
             </MessageBox>
         </Instruction>
     )

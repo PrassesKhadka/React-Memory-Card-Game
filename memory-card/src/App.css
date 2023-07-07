@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: Signature;
-    src: url(../public/fonts/Creattion\ Demo.otf);
+    src: url(../public/fonts/Vogue.ttf);
 }
 
 p
@@ -19,5 +19,4 @@ p
 h1
 {
     font-family:'Signature';
-    color:black;
 }

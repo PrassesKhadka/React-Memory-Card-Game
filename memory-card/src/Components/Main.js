@@ -10,7 +10,8 @@ const Main=()=>{
     const [clickedsuperheroes,setClickedsuperheroes]=useState([]); //clicked superheroes array
     const [currentscore,setCurrentscore]=useState(0);
     const [bestscore,setBestscore]=useState(0);
-
+    const [winner,setWinner]=useState(false);
+    
     //using ComponentMounts to fetch data
     //shuffle array after each ComponentMounts
     useEffect(()=>{
@@ -74,6 +75,10 @@ const Main=()=>{
             setCurrentscore(newscore)
             setSuperheroes(shuffle(superheroes))
         }
+        if(currentscore=12)
+        {
+            setWinner(true)
+        }
 
     }
 
@@ -85,7 +90,8 @@ const Main=()=>{
 
     return(
         <div>
-            <Scoreboard currentscore={currentscore} bestscore={bestscore}></Scoreboard>
+            {/* Conditional rendering the win */}
+            {winner?<Winner><Winner/>:<Scoreboard currentscore={currentscore} bestscore={bestscore}></Scoreboard>}
             <Cardflex handleChange={handleChange} superheroes={superheroes}></Cardflex>
         </div>
     )

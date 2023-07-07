@@ -26,7 +26,7 @@
     <li><a href='https://www.theodinproject.com/lessons/node-path-javascript-state-and-props' target="_blank">State Management</a></li>
     <li>Using <a href='https://react.dev/learn/conditional-rendering' target="_blank">Conditional rendering</a></li>
     <li>React <a href='https://styled-components.com/' target="_blank">styled-components</a>->which helps you to write CSS in JS/TS file</li>
-    <li>Use of API(Marvel API)</li>
+    <li>Use of <a href='https://www.theodinproject.com/lessons/node-path-javascript-working-with-apis'>API</a>(<a href='https://developer.marvel.com/'>Marvel API</a>)</li>
     <li><a href='https://www.theodinproject.com/lessons/javascript-using-git-in-the-real-world' target="_blank">Github</a> branching and workflow</li>
     <li>Use of <a href='https://www.theodinproject.com/lessons/foundations-command-line-basics' target="_blank">command lines</a> in <a href='https://www.theodinproject.com/lessons/foundations-installations' target="_blank">Linux</a> to navigate through files and perform actions</li>
     <li>Playing with arrays and it's <a href=''>methods</a></li>

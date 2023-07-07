@@ -2,13 +2,15 @@
 <h1>Memory Card Game:</h1>
  👉<a href='https://prasseskhadka.github.io/React-Memory-Card-Game/' target='_blank'><i>Live Demo</i></a> 👈
 
+<h1>Preview</h1>
+<img src='memory_card_screenshot.png'></img>
+
 <h1>Installing and running:</h1>
-```
-git clone https://github.com/PrassesKhadka/React-Memory-Card-Game.git
-cd React-Memory-Card-Game
-npm install
-npm run start
-```
+>git clone https://github.com/PrassesKhadka/React-Memory-Card-Game.git
+>cd React-Memory-Card-Game
+>npm install
+>npm run start
+
 <h1>Built With:</h1>
 <ul>
     <li><a href='https://react.dev/' target="_blank">React</a></li>

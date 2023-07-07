@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Header=()=>{
     return(
         <Navbar>
-            <Image src='Marvel_Logo.png'></Image>
+            <a href=''><Image src='Marvel_Logo.png'></Image></a>
         </Navbar>
     )
 }

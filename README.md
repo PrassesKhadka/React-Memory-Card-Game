@@ -29,6 +29,12 @@
     <li>Use of API(Marvel API)</li>
     <li><a href='https://www.theodinproject.com/lessons/javascript-using-git-in-the-real-world' target="_blank">Github</a> branching and workflow</li>
     <li>Use of <a href='https://www.theodinproject.com/lessons/foundations-command-line-basics' target="_blank">command lines</a> in <a href='https://www.theodinproject.com/lessons/foundations-installations' target="_blank">Linux</a> to navigate through files and perform actions</li>
+    <li>Playing with arrays and it's <a href=''>methods</a></li>
 <ul>
+
 <h1>Reference:</h1>
-<p>This Project is a part of <a href='https://www.theodinproject.com/lessons/node-path-javascript-memory-card' target="_blank">The Odin Project</a> JS curiculum</p>
+<ul>
+    <li>
+        <p>This Project is a part of <a href='https://www.theodinproject.com/lessons/node-path-javascript-memory-card' target="_blank">The Odin Project</a> JS curiculum</p>
+    </li>
+</ul>

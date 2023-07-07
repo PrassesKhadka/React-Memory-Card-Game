@@ -14,11 +14,11 @@
 </li>
 
 <h1>Built With:</h1>
-<ul>
-    <li><a href='https://react.dev/' target="_blank">React</a></li>
-    <li><a href='https://styled-components.com/' target="_blank">styled-components</a></li>
-    <li><a href='https://developer.marvel.com/' target="_blank">Marvel API</li>
-</ul>
+<li>
+    <ol><a href='https://react.dev/' target="_blank">React</a></ol>
+    <ol><a href='https://styled-components.com/' target="_blank">styled-components</a></ol>
+    <ol><a href='https://developer.marvel.com/' target="_blank">Marvel API</ol>
+</li>
 
 <h1>Lessons Learnt:</h1>
 <ul>

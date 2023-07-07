@@ -15,11 +15,13 @@ const Wrapper=styled.div`
     flex-direction:column;
     flex-wrap:wrap;
     padding:20px;
+    
 `
 const Image=styled.img`
     height:150px;
     width:150px;
     border:1px solid white;
+    box-shadow: 20px 20px 14px rgba(0,0,0,0.1);
 `;
 
 const Name=styled.p`

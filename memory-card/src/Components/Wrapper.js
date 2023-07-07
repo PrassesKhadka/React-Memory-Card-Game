@@ -19,8 +19,8 @@ const Instruction=styled.div`
     position:fixed;
     height:100%;
     width:100%;
-    background-color:lightgreen;
-    opacity:0.9;
+    background-color:red;
+    opacity:0.85;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -29,9 +29,8 @@ const Instruction=styled.div`
     
 const MessageBox=styled.div`
     border:1px solid black;
-    border-radius:15px;
+    border-radius:5px;
     height:300px;
-    width:250;
     padding:25px;
     background-color:white;
     display:flex;

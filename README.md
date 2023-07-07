@@ -1,6 +1,6 @@
 # React-Memory-Card-Game
 <h1>Memory Card Game:</h1>
- 👉<a href='https://prasseskhadka.github.io/React-Memory-Card-Game/ target="_blank"'><i>Live Demo</i></a> 👈
+ 👉<a href='https://prasseskhadka.github.io/React-Memory-Card-Game/' target='_blank'><i>Live Demo</i></a> 👈
 
 <h1>Installing and running:</h1>
 ```
@@ -27,4 +27,4 @@ npm run start
     <li>Use of <a href='https://www.theodinproject.com/lessons/foundations-command-line-basics' target="_blank">command lines</a> in <a href='https://www.theodinproject.com/lessons/foundations-installations' target="_blank">Linux</a> to navigate through files and perform actions</li>
 <ul>
 
-This Project is a part of <a href='https://www.theodinproject.com/lessons/node-path-javascript-memory-card' target="_blank">The Odin Project</a> JS curiculum
+<p>This Project is a part of <a href='https://www.theodinproject.com/lessons/node-path-javascript-memory-card' target="_blank">The Odin Project</a> JS curiculum</p>

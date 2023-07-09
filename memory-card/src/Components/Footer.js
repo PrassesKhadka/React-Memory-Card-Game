@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const Footer=()=>{
     return(
         <Wrapper>
-            <a href='https://github.com/PrassesKhadka/React-Memory-Card-Game/'>
+            <a href='https://github.com/PrassesKhadka/React-Memory-Card-Game/' target='_blank'>
                 <Image src='Github_Logo.png'></Image>
             </a>
             <p>Prasses Khadka</p>

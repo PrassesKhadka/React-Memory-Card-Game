@@ -4,6 +4,7 @@
 
 <h1>Preview</h1>
 <img src='memory_card_screenshot.png'></img>
+<img src='screenshot2.png'></img>
 
 <h1>Installing and running:</h1>
 <ol>

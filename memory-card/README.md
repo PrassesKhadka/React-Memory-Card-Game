@@ -3,7 +3,8 @@
  👉<a href='https://prasseskhadka.github.io/React-Memory-Card-Game/' target=''><i>Live Demo</i></a> 👈
 
 <h1>Preview</h1>
-<img src='memory_card_screenshot.png'></img>
+<img src='../memory_card_screenshot.png'></img>
+<img src='../screenshot2.png'></img>
 
 <h1>Installing and running:</h1>
 <ol>
